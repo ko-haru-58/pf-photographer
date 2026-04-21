@@ -1,0 +1,23 @@
+/*----------------------------------------------------------------- */
+/* object/component/_button.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.c-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-font-sub);
+    border-radius: 999px;
+    font-weight: f.$font-weight-bold;
+    line-height: 1;
+    transition: all 0.3s 0s ease;
+
+    &:hover{
+        background: var(--color-bg-base);
+        color: var(--color-accent);
+    }
+}

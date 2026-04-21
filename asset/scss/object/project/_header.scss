@@ -1,0 +1,20 @@
+/*----------------------------------------------------------------- */
+/* object/project/_header.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.p-header__logo{
+    height: f.to-rem(16);
+    margin: f.to-rem(24) 0;
+
+    @include f.breakpoint(pc){
+        height: f.to-rem(24);
+        margin: f.to-rem(38) 0;
+    }
+
+    & img{
+        display: block;
+        height: 100%;
+    }
+}
+

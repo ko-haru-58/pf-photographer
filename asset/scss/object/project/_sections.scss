@@ -1,0 +1,13 @@
+/*----------------------------------------------------------------- */
+/* object/project/_sections.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.p-sections__outer{
+    width: 90%;
+    max-width: 760px;
+
+    @include f.breakpoint(pc){
+        max-width: 1080px;
+    }
+}

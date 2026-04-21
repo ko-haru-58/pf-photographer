@@ -1,0 +1,42 @@
+/*----------------------------------------------------------------- */
+/* object/component/_section.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.c-section{
+    width: 100%;
+    padding: 80px 0;
+
+    &__heading{
+        margin-bottom: f.to-rem(44);
+        text-align: center;
+
+        @include f.breakpoint(pc){
+            margin-bottom: f.to-rem(60);
+        }
+    }
+
+    &__heading--main{
+        display: block;
+        margin-bottom: f.to-rem(20);
+    }
+
+    &__heading--sub{
+        display: block;
+        font-size: f.to-rem(14);
+        letter-spacing: 0.08em;
+        text-indent: 0.08em;
+    }
+
+    &__text{
+        margin-bottom: f.to-rem(28);
+
+        @include f.breakpoint(pc){
+            margin-bottom: f.to-rem(32);
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

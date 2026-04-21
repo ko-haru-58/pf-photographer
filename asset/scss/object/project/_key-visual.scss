@@ -1,0 +1,67 @@
+/*----------------------------------------------------------------- */
+/* object/project/_key-visual.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.p-key-visual{
+    position: relative;
+    width: 100%;
+
+    &__image{
+        width: 100%;
+        aspect-ratio: 400 / 555;
+
+        @include f.breakpoint(md){
+            aspect-ratio: 1366 / 650;
+        }
+
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__inner{
+        position: absolute;
+        bottom: 4.8%;
+        width: 100%;
+        text-align: center;
+
+        @include f.breakpoint(md) {
+            bottom: 6.2%;
+        } 
+    }
+
+    &__header{
+        &--sub{
+            display: block;
+            margin-bottom: f.to-rem(20);
+            font-size: f.to-rem(18);
+
+            @include f.breakpoint(pc) {
+                margin-bottom: f.to-rem(32);
+                font-size: f.to-rem(32);
+            } 
+        }
+
+        &--main{
+            display: block;
+            margin-bottom: f.to-rem(20);
+
+            @include f.breakpoint(pc) {
+                margin-bottom: f.to-rem(32);
+            } 
+        }
+    }
+
+    &__text{
+        color: var(--color-font-strong);
+        line-height: 1;
+        letter-spacing: 0.2em;
+        text-indent: 0.2em;
+
+        @include f.breakpoint(pc) {
+            font-size: f.to-rem(24);
+        } 
+    }
+}

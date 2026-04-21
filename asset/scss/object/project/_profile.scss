@@ -1,0 +1,65 @@
+/*----------------------------------------------------------------- */
+/* object/project/_profile.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.p-profile{
+
+    &__inner{
+        width: 100%;
+
+        @include f.breakpoint(pc){
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        aspect-ratio: 540 / 355;
+        margin-bottom: f.to-rem(24);
+
+        @include f.breakpoint(pc){
+            width: 50%;
+            margin-bottom: 0;
+        }
+
+        & img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    &__text-area{
+        background: var(--color-bg-light);
+
+        @include f.breakpoint(pc){
+            width: 50%;
+            padding: f.to-rem(40);
+        }
+    }
+
+    &__name{
+        margin-bottom: f.to-rem(16);
+        line-height: 1;
+        letter-spacing: 0.2em;
+
+        @include f.breakpoint(pc){
+            margin-bottom: f.to-rem(24);
+        }
+
+        &--main{
+            margin-right: calc(f.to-rem(8) - 0.2em);
+            font-size: f.to-rem(18);
+            
+            @include f.breakpoint(pc){
+                margin-right: calc(f.to-rem(16) - 0.2em);
+                font-size: f.to-rem(24);
+            }
+
+        }
+    }
+
+}
