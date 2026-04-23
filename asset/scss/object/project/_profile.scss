@@ -4,9 +4,17 @@
 @use "../../foundation/index" as f;
 
 .p-profile{
+    & .c-section__heading{
+        margin-bottom: f.to-rem(48);
+
+        @include f.breakpoint(pc){
+            margin-bottom: f.to-rem(60);
+        }
+    }
 
     &__inner{
         width: 100%;
+        background: var(--color-bg-light);
 
         @include f.breakpoint(pc){
             display: flex;
@@ -32,9 +40,7 @@
 
     }
 
-    &__text-area{
-        background: var(--color-bg-light);
-
+    &__text-group{
         @include f.breakpoint(pc){
             width: 50%;
             padding: f.to-rem(40);

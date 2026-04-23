@@ -42,29 +42,30 @@
 
         <!-- main -->
         <main class="l-main">
+            <!-- key visual -->
             <div class="p-key-visual">
                 <div class="p-key-visual__image">
                     <picture>
                         <!-- PC WebP -->
                         <source
                             media="(min-width: 600px)"
-                            srcset="./asset/img/bg-top-kv-pc.webp 1x, ./asset/img/bg-top-kv-pc@2x.webp 2x"
+                            srcset="./asset/img/kv/bg-top-kv-pc.webp 1x, ./asset/img/kv/bg-top-kv-pc@2x.webp 2x"
                             type="image/webp"
                         >
                         <!-- PC JPG -->
                         <source
                             media="(min-width: 600px)"
-                            srcset="./asset/img/bg-top-kv-pc.jpg 1x, ./asset/img/bg-top-kv-pc@2x.jpg 2x"
+                            srcset="./asset/img/kv/bg-top-kv-pc.jpg 1x, ./asset/img/kv/bg-top-kv-pc@2x.jpg 2x"
                         >
                         <!-- SP WebP -->
                         <source
-                            srcset="./asset/img/bg-top-kv-sp.webp 1x, ./asset/img/bg-top-kv-sp@2x.webp 2x"
+                            srcset="./asset/img/kv/bg-top-kv-sp.webp 1x, ./asset/img/kv/bg-top-kv-sp@2x.webp 2x"
                             type="image/webp"
                         > 
                         <!-- SP JPG fallback -->               
                         <img
-                            src="./asset/img/bg-top-kv-sp.jpg"
-                            srcset="./asset/img/bg-top-kv-sp.jpg 1x, ./asset/img/bg-top-kv-sp@2x.jpg 2x"
+                            src="./asset/img/kv/bg-top-kv-sp.jpg"
+                            srcset="./asset/img/kv/bg-top-kv-sp.jpg 1x, ./asset/img/kv/bg-top-kv-sp@2x.jpg 2x"
                             alt="キービジュアル"
                             width="400"
                             height="555"
@@ -80,7 +81,8 @@
                 </div>
             </div>
 
-            <div class="p-sections__outer">
+            <div class="l-main__body">
+                <!-- Profile -->
                 <section class="c-section p-profile">
                     <h2 class="c-section__heading">
                         <span class="c-section__heading--main">Profile</span>
@@ -91,24 +93,116 @@
                             <picture>
                                 <!-- WebP -->
                                 <source
-                                    srcset="./asset/img/pic-top-profile.webp 1x, ./asset/img/pic-top-profile@2x.webp 2x"
+                                    srcset="./asset/img/profile/pic-top-profile.webp 1x, ./asset/img/profile/pic-top-profile@2x.webp 2x"
                                     type="image/webp"
                                 > 
                                 <!-- JPG fallback -->               
                                 <img
-                                    src="./asset/img/pic-top-profile.jpg"
-                                    srcset="./asset/img/pic-top-profile.jpg 1x, ./asset/img/pic-top-profile@2x.jpg 2x"
+                                    src="./asset/img/profile/pic-top-profile.jpg"
+                                    srcset="./asset/img/profile/pic-top-profile.jpg 1x, ./asset/img/profile/pic-top-profile@2x.jpg 2x"
                                     alt="キービジュアル"
                                     width="540"
                                     height="355"
                                 >
                             </picture>
                         </div>
-                        <div class="p-profile__text-area">
+                        <div class="p-profile__text-group">
                             <p class="p-profile__name">
                                 <span class="p-profile__name--main">山田 太郎</span>
                                 <span class="p-profile__name--sub">YAMADA TARO</span>
                             </p>
+                            <p class="c-section__text">
+                                親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。
+                            </p>
+                            <p class="c-section__text">
+                                別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Products -->
+                <section class="c-section">
+                    <h2 class="c-section__heading">
+                        <span class="c-section__heading--main">Products</span>
+                        <span class="c-section__heading--sub">販売作品集</span>
+                    </h2>
+                    <div class="c-card-product">
+                        <div class="c-card-product__image">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/products/pic-top-products-2020.webp 1x, ./asset/img/products/pic-top-products-2020@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img
+                                    src="./asset/img/products/pic-top-products-2020.jpg"
+                                    srcset="./asset/img/products/pic-top-products-2020.jpg 1x, ./asset/img/products/pic-top-products-2020@2x.jpg 2x"
+                                    alt="作品集2020"
+                                    width="400"
+                                    height="400"
+                                >
+                            </picture>
+                        </div>
+                        <div class="c-card-product__text-group">
+                            <h3 class="c-card-product__heading">Y.T Collection 2020</h3>
+                            <p class="c-section__text">
+                                親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。
+                            </p>
+                            <p class="c-section__text">
+                                別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c-card-product__image">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/products/pic-top-products-2019.webp 1x, ./asset/img/products/pic-top-products-2019@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img
+                                    src="./asset/img/products/pic-top-products-2019.jpg"
+                                    srcset="./asset/img/products/pic-top-products-2019.jpg 1x, ./asset/img/products/pic-top-products-2019@2x.jpg 2x"
+                                    alt="作品集2019"
+                                    width="400"
+                                    height="400"
+                                >
+                            </picture>
+                        </div>
+                        <div class="c-card-product__text-group">
+                            <h3 class="c-card-product__heading">Y.T Collection 2019</h3>
+                            <p class="c-section__text">
+                                親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。
+                            </p>
+                            <p class="c-section__text">
+                                別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c-card-product__image">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/products/pic-top-products-2018.webp 1x, ./asset/img/products/pic-top-products-2018@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img
+                                    src="./asset/img/products/pic-top-products-2018.jpg"
+                                    srcset="./asset/img/products/pic-top-products-2018.jpg 1x, ./asset/img/products/pic-top-products-2018@2x.jpg 2x"
+                                    alt="作品集2018"
+                                    width="400"
+                                    height="400"
+                                >
+                            </picture>
+                        </div>
+                        <div class="c-card-product__text-group">
+                            <h3 class="c-card-product__heading">Y.T Collection 2018</h3>
                             <p class="c-section__text">
                                 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。
                             </p>

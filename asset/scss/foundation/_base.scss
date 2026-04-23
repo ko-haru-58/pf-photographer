@@ -6,6 +6,7 @@
 :root {
     --color-bg-base: #{f.$color-bg-base};
     --color-bg-light: #{f.$color-bg-light};
+    --color-border: #{f.$color-border};
     --color-font-main: #{f.$color-font-main};
     --color-font-strong: #{f.$color-font-strong};
 }
@@ -50,6 +51,16 @@ h2 {
 
     @include f.breakpoint(pc) {
         font-size: f.to-rem(48);
+    }
+}
+
+h3{
+    color: var(--color-font-main);
+    font-size: f.to-rem(16);
+    letter-spacing: 0.2em;
+
+    @include f.breakpoint(pc) {
+        font-size: f.to-rem(24);
     }
 }
 

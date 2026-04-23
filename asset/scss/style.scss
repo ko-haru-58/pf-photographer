@@ -17,6 +17,7 @@
 // Component
 // --------------------
 @use "./object/component/_button";
+@use "./object/component/_card";
 @use "./object/component/_section";
 
 // --------------------
@@ -26,7 +27,6 @@
 @use "./object/project/_header";
 @use "./object/project/_key-visual";
 @use "./object/project/_profile";
-@use "./object/project/_sections";
 
 // -------------------- 
 // Utility
