@@ -14,11 +14,6 @@
         @include f.breakpoint(md){
             aspect-ratio: 1366 / 650;
         }
-
-        & img{
-            width: 100%;
-            height: auto;
-        }
     }
 
     &__inner{

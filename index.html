@@ -36,7 +36,7 @@
         <!-- header -->
         <header class="l-header">
             <div class="p-header__logo">
-                <img src="./asset/img/logo.svg" alt="ロゴ">
+                <img class="u-img-full" src="./asset/img/logo.svg" alt="ロゴ">
             </div>
         </header>
 
@@ -63,7 +63,7 @@
                             type="image/webp"
                         > 
                         <!-- SP JPG fallback -->               
-                        <img
+                        <img class="u-img-full"
                             src="./asset/img/kv/bg-top-kv-sp.jpg"
                             srcset="./asset/img/kv/bg-top-kv-sp.jpg 1x, ./asset/img/kv/bg-top-kv-sp@2x.jpg 2x"
                             alt="キービジュアル"
@@ -82,7 +82,7 @@
             </div>
 
             <div class="l-main__body">
-                <!-- Profile -->
+                <!-- section：Profile -->
                 <section class="c-section p-profile">
                     <h2 class="c-section__heading">
                         <span class="c-section__heading--main">Profile</span>
@@ -97,7 +97,7 @@
                                     type="image/webp"
                                 > 
                                 <!-- JPG fallback -->               
-                                <img
+                                <img class="u-img-full"
                                     src="./asset/img/profile/pic-top-profile.jpg"
                                     srcset="./asset/img/profile/pic-top-profile.jpg 1x, ./asset/img/profile/pic-top-profile@2x.jpg 2x"
                                     alt="キービジュアル"
@@ -121,12 +121,13 @@
                     </div>
                 </section>
 
-                <!-- Products -->
+                <!-- section：Products -->
                 <section class="c-section">
                     <h2 class="c-section__heading">
                         <span class="c-section__heading--main">Products</span>
                         <span class="c-section__heading--sub">販売作品集</span>
                     </h2>
+                    <!-- Products 2020 -->
                     <div class="c-card-product">
                         <div class="c-card-product__image">
                             <picture>
@@ -136,10 +137,10 @@
                                     type="image/webp"
                                 > 
                                 <!-- JPG fallback -->               
-                                <img
+                                <img class="u-img-full"
                                     src="./asset/img/products/pic-top-products-2020.jpg"
                                     srcset="./asset/img/products/pic-top-products-2020.jpg 1x, ./asset/img/products/pic-top-products-2020@2x.jpg 2x"
-                                    alt="作品集2020"
+                                    alt="販売作品集2020"
                                     width="400"
                                     height="400"
                                 >
@@ -155,6 +156,7 @@
                             </p>
                         </div>
                     </div>
+                    <!-- Products 2019 -->
                     <div class="c-card-product">
                         <div class="c-card-product__image">
                             <picture>
@@ -164,10 +166,10 @@
                                     type="image/webp"
                                 > 
                                 <!-- JPG fallback -->               
-                                <img
+                                <img class="u-img-full"
                                     src="./asset/img/products/pic-top-products-2019.jpg"
                                     srcset="./asset/img/products/pic-top-products-2019.jpg 1x, ./asset/img/products/pic-top-products-2019@2x.jpg 2x"
-                                    alt="作品集2019"
+                                    alt="販売作品集2019"
                                     width="400"
                                     height="400"
                                 >
@@ -183,6 +185,7 @@
                             </p>
                         </div>
                     </div>
+                    <!-- Products 2018 -->
                     <div class="c-card-product">
                         <div class="c-card-product__image">
                             <picture>
@@ -192,10 +195,10 @@
                                     type="image/webp"
                                 > 
                                 <!-- JPG fallback -->               
-                                <img
+                                <img class="u-img-full"
                                     src="./asset/img/products/pic-top-products-2018.jpg"
                                     srcset="./asset/img/products/pic-top-products-2018.jpg 1x, ./asset/img/products/pic-top-products-2018@2x.jpg 2x"
-                                    alt="作品集2018"
+                                    alt="販売作品集2018"
                                     width="400"
                                     height="400"
                                 >
@@ -211,6 +214,157 @@
                             </p>
                         </div>
                     </div>
+                </section>
+
+                <!-- section：Works -->
+                <section class="c-section p-works">
+                    <h2 class="c-section__heading">
+                        <span class="c-section__heading--main">Works</span>
+                        <span class="c-section__heading--sub">作品</span>
+                    </h2>
+                    <div class="p-works__grid">
+                        <!-- image large -->
+                        <div class="p-works__item--large">
+                            <picture>
+                                <!-- PC WebP -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="./asset/img/works/pic-top-works-l-pc.webp 1x, ./asset/img/works/pic-top-works-l-pc@2x.webp 2x"
+                                    type="image/webp"
+                                >
+                                <!-- PC JPG -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="./asset/img/works/pic-top-works-l-pc.jpg 1x, ./asset/img/works/pic-top-works-l-pc@2x.jpg 2x"
+                                >
+                                <!-- SP WebP -->
+                                <source
+                                    srcset="./asset/img/works/pic-top-works-l-sp.webp 1x, ./asset/img/works/pic-top-works-l-sp@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- SP JPG fallback -->               
+                                <img class="u-img-full"
+                                    src="./asset/img/works/pic-top-works-l-sp.jpg"
+                                    srcset="./asset/img/works/pic-top-works-l-sp.jpg 1x, ./asset/img/works/pic-top-works-l-sp@2x.jpg 2x"
+                                    alt="海の夕日"
+                                    width="360"
+                                    height="203"
+                                >
+                            </picture>
+                        </div>
+                        <!-- image01 -->
+                        <div class="p-works__item--small">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/works/pic-top-works01.webp 1x, ./asset/img/works/pic-top-works01@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img class="u-img-full"
+                                    src="./asset/img/works/pic-top-works01.jpg"
+                                    srcset="./asset/img/works/pic-top-works01.jpg 1x, ./asset/img/works/pic-top-works01@2x.jpg 2x"
+                                    alt="霧の山"
+                                    width="120"
+                                    height="120"
+                                >
+                            </picture>
+                        </div>
+                        <!-- image02 -->
+                        <div class="p-works__item--small">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/works/pic-top-works02.webp 1x, ./asset/img/works/pic-top-works02@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img class="u-img-full"
+                                    src="./asset/img/works/pic-top-works02.jpg"
+                                    srcset="./asset/img/works/pic-top-works02.jpg 1x, ./asset/img/works/pic-top-works02@2x.jpg 2x"
+                                    alt="山と崖"
+                                    width="120"
+                                    height="120"
+                                >
+                            </picture>
+                        </div>
+                        <!-- image03 -->
+                        <div class="p-works__item--small">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/works/pic-top-works03.webp 1x, ./asset/img/works/pic-top-works03@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img class="u-img-full"
+                                    src="./asset/img/works/pic-top-works03.jpg"
+                                    srcset="./asset/img/works/pic-top-works03.jpg 1x, ./asset/img/works/pic-top-works03@2x.jpg 2x"
+                                    alt="霧の山"
+                                    width="120"
+                                    height="120"
+                                >
+                            </picture>
+                        </div>
+                        <!-- image04 -->
+                        <div class="p-works__item--small">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/works/pic-top-works04.webp 1x, ./asset/img/works/pic-top-works04@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img class="u-img-full"
+                                    src="./asset/img/works/pic-top-works04.jpg"
+                                    srcset="./asset/img/works/pic-top-works04.jpg 1x, ./asset/img/works/pic-top-works04@2x.jpg 2x"
+                                    alt="夜空"
+                                    width="120"
+                                    height="120"
+                                >
+                            </picture>
+                        </div>
+                        <!-- image05 -->
+                        <div class="p-works__item--small">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/works/pic-top-works05.webp 1x, ./asset/img/works/pic-top-works05@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img class="u-img-full"
+                                    src="./asset/img/works/pic-top-works05.jpg"
+                                    srcset="./asset/img/works/pic-top-works05.jpg 1x, ./asset/img/works/pic-top-works05@2x.jpg 2x"
+                                    alt="山の中腹"
+                                    width="120"
+                                    height="120"
+                                >
+                            </picture>
+                        </div>
+                        <!-- image06 -->
+                        <div class="p-works__item--small">
+                            <picture>
+                                <!-- WebP -->
+                                <source
+                                    srcset="./asset/img/works/pic-top-works06.webp 1x, ./asset/img/works/pic-top-works06@2x.webp 2x"
+                                    type="image/webp"
+                                > 
+                                <!-- JPG fallback -->               
+                                <img class="u-img-full"
+                                    src="./asset/img/works/pic-top-works06.jpg"
+                                    srcset="./asset/img/works/pic-top-works06.jpg 1x, ./asset/img/works/pic-top-works06@2x.jpg 2x"
+                                    alt="空と雲"
+                                    width="120"
+                                    height="120"
+                                >
+                            </picture>
+                        </div>
+                    </div>
+                    <p class="p-works__text">実績や作品は<br class="u-br-sp">全てInstagramで公開しています</p>
+                    <a class="c-button" href="https://www.instagram.com/instagram" target="_blank" rel="noopener noreferrer">
+                        Instagramを見る
+                    </a>
                 </section>
             </div>
 

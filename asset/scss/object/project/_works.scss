@@ -1,0 +1,49 @@
+/*----------------------------------------------------------------- */
+/* object/project/_profile.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.p-works{
+    @include f.breakpoint(pc){
+        max-width: 760px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: f.to-rem(8);
+        margin-bottom: f.to-rem(40);
+
+        @include f.breakpoint(pc){
+            grid-template-columns: repeat(6, 1fr);
+            margin-bottom: f.to-rem(56);
+        }
+    }
+
+    &__item--large{
+        grid-column: span 3;
+        aspect-ratio: 360 / 203;
+
+        @include f.breakpoint(pc){
+            grid-column: span 6;
+            margin-bottom: f.to-rem(8);
+        }
+    }
+
+    &__item--small{
+        aspect-ratio: 120 / 120;
+    }
+
+    &__text{
+        font-size: f.to-rem(16);
+        margin-bottom: f.to-rem(24);
+        line-height: 1.75;
+        text-align: center;
+
+        @include f.breakpoint(pc){
+            font-size: f.to-rem(24);
+        }
+    }
+}

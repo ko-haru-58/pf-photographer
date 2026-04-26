@@ -1,19 +1,15 @@
 /*----------------------------------------------------------------- */
-/* object/project/_header.scss
+/* object/utility/_utility.scss
 /*----------------------------------------------------------------- */
 @use "../../foundation/index" as f;
 
-.p-header__logo{
-    height: f.to-rem(16);
-    margin: f.to-rem(24) 0;
-
-    @include f.breakpoint(pc){
-        height: f.to-rem(24);
-        margin: f.to-rem(38) 0;
-    }
-
-    & img{
-        height: 100%;
-    }
+.u-img-full{
+    width: 100%;
+    height: auto;
 }
 
+.u-br-sp{
+    @include f.breakpoint(pc){
+        display: none;
+    }
+}
