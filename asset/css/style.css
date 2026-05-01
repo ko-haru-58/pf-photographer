@@ -496,6 +496,20 @@ img {
   }
 }
 
+.c-award-card {
+  width: 100%;
+  text-align: center;
+}
+.c-award-card__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 400/233;
+  padding-bottom: 1rem;
+}
+.c-award-card__heading {
+  letter-spacing: 0;
+}
+
 /*----------------------------------------------------------------- */
 /* object/component/_section.scss
 /*----------------------------------------------------------------- */
@@ -532,6 +546,26 @@ img {
 }
 .c-section__text:last-child {
   margin-bottom: 0;
+}
+
+/*----------------------------------------------------------------- */
+/* object/project/_awards.scss
+/*----------------------------------------------------------------- */
+.p-awards__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-awards__inner {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-awards__item {
+    flex: 1;
+  }
 }
 
 /*----------------------------------------------------------------- */

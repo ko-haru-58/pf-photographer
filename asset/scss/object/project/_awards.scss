@@ -1,0 +1,23 @@
+/*----------------------------------------------------------------- */
+/* object/project/_awards.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.p-awards{
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: f.to-rem(24);
+
+        @include f.breakpoint(pc){
+            flex-direction: row;
+            gap: f.to-rem(40);
+        }
+    }
+
+    &__item{
+        @include f.breakpoint(pc){
+            flex: 1;
+        }
+    }
+}

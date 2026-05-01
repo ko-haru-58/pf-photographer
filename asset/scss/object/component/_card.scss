@@ -55,3 +55,23 @@
     }
 
 }
+
+.c-award-card{
+    width: 100%;
+    text-align: center;
+
+    &__image{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 400 / 233;
+        padding-bottom: f.to-rem(16);
+
+        @include f.breakpoint(pc) {
+            
+        }
+    }
+
+    &__heading{
+        letter-spacing: 0;
+    }
+}
