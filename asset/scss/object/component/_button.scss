@@ -40,7 +40,7 @@
 
     &:hover{
         background: var(--color-border);
-        color: var(--color-bg-base);
+        color: var(--color-font-dark);
         transform: scale(1.05);
 
         &::after{

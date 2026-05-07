@@ -5,7 +5,11 @@
 
 .c-section{
     width: 90%;
-    padding: 80px 0;
+    padding: f.to-rem(80) 0;
+
+    @include f.breakpoint(pc){
+        padding: f.to-rem(104) 0;
+    }
 
     &--wide{
         @include f.breakpoint(pc){

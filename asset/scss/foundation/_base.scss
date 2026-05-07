@@ -6,9 +6,13 @@
 :root {
     --color-bg-base: #{f.$color-bg-base};
     --color-bg-light: #{f.$color-bg-light};
+    --color-bg-field: #{f.$color-bg-field};
+    --color-bg-sub-button: #{f.$color-bg-sub-button};
     --color-border: #{f.$color-border};
     --color-font-main: #{f.$color-font-main};
     --color-font-strong: #{f.$color-font-strong};
+    --color-font-dark: #{f.$color-font-dark};
+    --color-font-required: #{f.$color-font-required};
 }
 
 html {

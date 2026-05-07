@@ -1,0 +1,58 @@
+/*----------------------------------------------------------------- */
+/* object/component/_form.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.c-form{
+    &__item{
+        margin-bottom: f.to-rem(32);
+    }
+
+    &__label{
+        display: block;
+        margin-bottom: f.to-rem(16);
+        color: var(--color-font-strong);
+        line-height: 1;
+        letter-spacing: 0.08em;
+    }
+
+    &__required{
+        margin-left: f.to-rem(16);
+        color: var(--color-font-required);
+    }
+
+    &__input{
+        display: block;
+        width: 100%;
+        height: 60px;
+        padding: 0.5em;
+        background: var(--color-bg-field);
+        color: var(--color-font-dark);
+    }
+
+    &__textarea{
+        display: block;
+        width: 100%;
+        min-height: 200px;
+        resize: vertical;
+        padding: 0.5em;
+        background: var(--color-bg-field);
+    }
+
+    &__button{
+        display: block;
+        width: 250px;
+        height: 60px;
+        margin: 0 auto;
+        background: var(--color-bg-sub-button);
+        color: var(--color-font-dark);
+        font-size: f.to-rem(16);
+        transition: all 0.3s 0s ease;
+
+        &:hover{
+            font-weight: f.$font-weight-bold;
+            letter-spacing: 0.1em;
+            transform: scale(1.1);
+        }
+    }
+}
