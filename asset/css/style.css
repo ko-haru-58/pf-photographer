@@ -366,6 +366,21 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding-left: 1em;
+}
+
+li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
 /*----------------------------------------------------------------- */
 /* layout/_layout.scss
 /*----------------------------------------------------------------- */
@@ -380,15 +395,6 @@ img {
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-.l-main__body {
-  width: 90%;
-  max-width: 760px;
-}
-@media screen and (min-width: 768px) {
-  .l-main__body {
-    max-width: 1080px;
-  }
 }
 
 .l-footer {
@@ -514,8 +520,18 @@ img {
 /* object/component/_section.scss
 /*----------------------------------------------------------------- */
 .c-section {
-  width: 100%;
+  width: 90%;
   padding: 80px 0;
+}
+@media screen and (min-width: 768px) {
+  .c-section--wide {
+    max-width: 1080px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .c-section--narrow {
+    max-width: 760px;
+  }
 }
 .c-section__heading {
   margin-bottom: 2.75rem;
@@ -706,9 +722,86 @@ img {
 /*----------------------------------------------------------------- */
 /* object/project/_profile.scss
 /*----------------------------------------------------------------- */
+.p-school__table {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  text-align: left;
+  border-collapse: collapse;
+}
+@media screen and (min-width: 768px) {
+  .p-school__table {
+    margin-bottom: 3.5rem;
+  }
+}
+.p-school__table tr {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .p-school__table tr {
+    display: table-row;
+  }
+}
+.p-school__table tr:not(:first-child) th {
+  padding-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-school__table tr:not(:first-child) td {
+    padding-top: 1.25rem;
+  }
+}
+.p-school__table th {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .p-school__table th {
+    display: table-cell;
+    width: 30%;
+    margin-bottom: 0;
+    padding-bottom: 1.25rem;
+    border-bottom: solid 1px var(--color-border);
+    vertical-align: top;
+  }
+}
+.p-school__table td {
+  display: block;
+  padding-bottom: 1.25rem;
+  border-bottom: solid 1px var(--color-border);
+}
+@media screen and (min-width: 768px) {
+  .p-school__table td {
+    display: table-cell;
+    width: 70%;
+  }
+}
+.p-school__text {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-school__text {
+    font-size: 1.5rem;
+  }
+}
+.p-school .c-button {
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .p-school .c-button {
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+  }
+}
+
+/*----------------------------------------------------------------- */
+/* object/project/_profile.scss
+/*----------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .p-works {
-    max-width: 760px;
     margin-right: auto;
     margin-left: auto;
   }

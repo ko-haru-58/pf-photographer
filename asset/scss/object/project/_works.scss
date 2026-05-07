@@ -5,7 +5,6 @@
 
 .p-works{
     @include f.breakpoint(pc){
-        max-width: 760px;
         margin-right: auto;
         margin-left: auto;
     }

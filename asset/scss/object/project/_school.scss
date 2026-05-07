@@ -1,0 +1,83 @@
+/*----------------------------------------------------------------- */
+/* object/project/_profile.scss
+/*----------------------------------------------------------------- */
+@use "../../foundation/index" as f;
+
+.p-school{
+    &__table{
+        width: 100%;
+        margin-bottom: f.to-rem(40);
+        text-align: left;
+        border-collapse: collapse;
+
+        @include f.breakpoint(pc){
+            margin-bottom: f.to-rem(56);
+        }
+
+        & tr{
+            display: block;
+
+            @include f.breakpoint(pc){
+                display: table-row;
+            }
+
+            &:not(:first-child) th{
+                padding-top: f.to-rem(20);
+            }
+
+            &:not(:first-child) td{
+                @include f.breakpoint(pc){
+                    padding-top: f.to-rem(20);
+                }
+            }
+        }
+
+        & th{
+            display: block;
+            margin-bottom: f.to-rem(4);
+            font-weight: f.$font-weight-regular;
+
+            @include f.breakpoint(pc){
+                display: table-cell;
+                width: 30%;
+                margin-bottom: 0;
+                padding-bottom: f.to-rem(20);
+                border-bottom: solid 1px var(--color-border);
+                vertical-align:top;
+            }
+        }
+
+        & td{
+            display: block;
+            padding-bottom: f.to-rem(20);
+            border-bottom: solid 1px var(--color-border);
+
+            @include f.breakpoint(pc){
+                display: table-cell;
+                width: 70%;
+            }
+        }
+    }
+
+    &__text{
+        margin-bottom: f.to-rem(24);
+        font-size: f.to-rem(16);
+        line-height: 1.75;
+        text-align: center;
+
+        @include f.breakpoint(pc){
+            font-size: f.to-rem(24);
+        }
+    }
+
+    & .c-button{
+        font-size: f.to-rem(14);
+        letter-spacing: 0.1em;
+
+        @include f.breakpoint(pc){
+            font-size: f.to-rem(32);
+            letter-spacing: 0.2em;
+        }
+
+    }
+}

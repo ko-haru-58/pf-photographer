@@ -72,3 +72,18 @@ a {
 img {
     display: block;
 }
+
+ul{
+    list-style: none;
+}
+
+li {
+  position: relative;
+  padding-left: 1em;
+}
+
+li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
