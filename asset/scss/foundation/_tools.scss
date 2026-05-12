@@ -1,8 +1,5 @@
-/*----------------------------------------------------------------- */
-/* foundation/_tools.scss
-/*----------------------------------------------------------------- */
+/* -- foundation/_tools.scss -- */
 
-/* --- メディアクエリ --- */
 @mixin breakpoint($point){
     @if $point == md {
         @media screen and (min-width: 600px){
@@ -17,7 +14,6 @@
     }
 }
 
-// --- フォントサイズをpxからremに変換 ---
 @function to-rem($px){
     @return ($px / 16) * 1rem;
 }

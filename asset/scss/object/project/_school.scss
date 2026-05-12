@@ -5,10 +5,8 @@
 
 .p-school{
     &__table{
-        width: 100%;
         margin-bottom: f.to-rem(40);
         text-align: left;
-        border-collapse: collapse;
 
         @include f.breakpoint(pc){
             margin-bottom: f.to-rem(56);

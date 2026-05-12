@@ -82,12 +82,17 @@ ul{
 }
 
 li {
-  position: relative;
-  padding-left: 1em;
+    position: relative;
+    padding-left: 1em;
 }
 
 li::before {
-  content: "・";
-  position: absolute;
-  left: 0;
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
